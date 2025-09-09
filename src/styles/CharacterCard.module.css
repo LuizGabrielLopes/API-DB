@@ -1,0 +1,40 @@
+.card {
+    width: 18.75rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.9375rem;
+    transition: transform 0.25s;
+    background-color: white;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    overflow: visible;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:hover .avatar {
+    transform: translateY(-3rem) scale(1.1);
+}
+
+.avatar {
+    width: 8rem;
+    height: 20rem;
+    border-radius: 0.625rem;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    z-index: 10;
+    transform: translateY(-2rem);
+    transition: transform 0.3s ease;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0 0.5rem;
+    color: #333;
+}
